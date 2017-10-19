@@ -57,10 +57,14 @@
      <None Include="Assets\FirebaseAssetPackage\Firebase\Plugins\link.xml" />
      <None Include="Assets\FirebaseAssetPackage\Plugins\Android\Firebase\AndroidManifest.xml" />
      <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\AppDependencies.xml" />
+     <None Include="Assets\FirebaseAssetPackage\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
+     <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\AnalyticsDependencies.xml" />
      <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\AuthDependencies.xml" />
+     <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\FirebaseStorage_v4.2.0_manifest.txt" />
      <None Include="Assets\FirebaseAssetPackage\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
      <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\FirebaseAuth_v4.2.0_manifest.txt" />
      <None Include="Assets\FirebaseAssetPackage\PlayServicesResolver\Editor\play-services-resolver_v1.2.53.0.txt" />
+     <None Include="Assets\FirebaseAssetPackage\Firebase\Editor\FirebaseAnalytics_v4.2.0_manifest.txt" />
      <None Include="Assets\FirebaseAssetPackage\Firebase\Plugins\Http\link.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity_201712/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -83,26 +87,32 @@
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity_201712/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
- <Reference Include="Firebase.Database">
- <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.Database.dll</HintPath>
- </Reference>
- <Reference Include="Google.Sharpen">
- <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Google.Sharpen.dll</HintPath>
- </Reference>
- <Reference Include="Google.MiniJson">
- <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Google.MiniJson.dll</HintPath>
- </Reference>
  <Reference Include="Firebase.App">
  <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.App.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Auth">
  <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.Auth.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Tasks">
- <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ <Reference Include="Firebase.Database">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.Sharpen">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Google.Sharpen.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
  <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Parse/Plugins/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Parse/Plugins/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Analytics">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Storage">
+ <HintPath>C:/Dev/UnityExperiments/FirebaseHelloWorld/Assets/FirebaseAssetPackage/Firebase/Plugins/Firebase.Storage.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
