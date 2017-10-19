@@ -16,7 +16,7 @@ public class LoginToFirebase : MonoBehaviour {
 	void Start() {
 		// Set this before calling into the realtime database.
 		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://unity-firebase-hello-world.firebaseio.com/");
-		FirebaseApp.DefaultInstance.SetEditorP12FileName("../FirebaseAssetPackage/Editor Default Resources/Unity Firebase Hello World-1e8c83ab0a0c.p12");
+		FirebaseApp.DefaultInstance.SetEditorP12FileName(Application.dataPath + "/FirebaseAssetPackage/Editor Default Resources/Unity Firebase Hello World-1e8c83ab0a0c.p12");
 		FirebaseApp.DefaultInstance.SetEditorServiceAccountEmail("unity-editor@unity-firebase-hello-world.iam.gserviceaccount.com");
 		FirebaseApp.DefaultInstance.SetEditorP12Password("notasecret");
 		Debug.Log ("Using P12 for Firebase Access in Editor");
