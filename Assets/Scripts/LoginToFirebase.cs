@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ using UnityEngine.UI;
 using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
+
 
 public class LoginToFirebase : MonoBehaviour {
 
@@ -47,7 +49,18 @@ public class LoginToFirebase : MonoBehaviour {
 				else if (task.IsCompleted) {
 					DataSnapshot snapshot = task.Result;
 					// Do something with snapshot...
-					Debug.Log(snapshot.GetRawJsonValue());
+
+					var databaseItems = snapshot.Value as Dictionary<string, object>;
+
+					foreach (var item in databaseItems)
+					{
+						Debug.Log(item.Key); 
+						var values = item.Value as Dictionary<string, object>;
+						foreach (var v in values)
+						{
+							Debug.Log(v.Key + ": " + v.Value); 
+						}
+					}
 				}
 			});
 	}
